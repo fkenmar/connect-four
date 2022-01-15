@@ -102,7 +102,8 @@ function endGame(msg) {
   let idk = document.createElement('h1');
   idk.innerText = `Winner is Player ${currPlayer}`
   gamezz.append(idk)
-  
+  let removeMonitor = document.getElementById('playerMonitor');
+  removeMonitor.remove()
 }
 
 /** handleClick: handle click of column top to play piece */
